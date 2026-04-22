@@ -2,7 +2,7 @@
 
 This repository contains a custom implementation of a **Group-Based Scheduling** algorithm within the [Phoenix-RTOS](https://phoenix-rtos.com/) microkernel. This project was developed as part of an operating systems research assignment to manage CPU resources across distinct task groups with specific time quanta.
 
-## 🚀 Overview
+## Overview
 
 The standard Phoenix-RTOS scheduler was extended to support a hierarchical group scheduling logic. Tasks are assigned to one of three groups (A, B, or C), and each group is allocated a specific number of CPU quanta. This ensures predictable execution ratios and prevents low-priority groups from consuming excessive resources.
 
@@ -13,7 +13,7 @@ The standard Phoenix-RTOS scheduler was extended to support a hierarchical group
 
 ---
 
-## 🛠 Technical Implementation
+## Technical Implementation
 
 ### Scheduler Logic
 The scheduler operates on a Round-Robin basis between groups. The execution flow follows this cycle:
